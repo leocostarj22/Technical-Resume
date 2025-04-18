@@ -1,0 +1,131 @@
+.resume-header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-info h1 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+}
+
+.header-info h2 {
+    margin: 0 0 15px 0;
+    color: var(--secondary-color);
+}
+
+.resume-section {
+    margin-bottom: 40px;
+}
+
+.resume-section h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    min-width: 150px;
+    font-weight: 500;
+}
+
+.skill-level {
+    display: flex;
+    gap: 5px;
+}
+
+.level-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.level-dot.filled {
+    background-color: var(--secondary-color);
+}
+
+.experience-item, .education-item, .certification-item {
+    margin-bottom: 25px;
+}
+
+.experience-item h4, .education-item h4 {
+    color: var(--primary-color);
+    margin: 0 0 5px 0;
+}
+
+.experience-item h5, .education-item h5 {
+    color: var(--secondary-color);
+    margin: 0 0 10px 0;
+}
+
+.date-range {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.technologies {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.languages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.resume-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.button.secondary {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .resume-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .resume-actions {
+        flex-direction: column;
+    }
+}
